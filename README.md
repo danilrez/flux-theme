@@ -20,7 +20,7 @@ Pick the variant that fits your focus:
         > Or, open the **Extensions** view and search for **`danilrez.flux-theme`**.
 
 2.  **Set the Color Theme**:
-    - Open the **Command Palette** _(<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> on Windows/Linux or <kbd>⌘</kbd>+<kbd>⇧</kbd>+<kbd>P</kbd> on macOS)_.
+    - Open the **Command Palette** _(`Ctrl`+`Shift`+`P` on Windows/Linux or `⌘`+`⇧`+`P` on macOS)_.
     - Search for `Preferences: Color Theme` and choose one of the `Flux` variants.
 
 3.  **Enjoy!** 🎉
