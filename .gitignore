@@ -1,6 +1,6 @@
 # Node artifact files
 node_modules/
-build
+build/
 *.vsix
 pnpm-lock.yaml
 package-lock.json
