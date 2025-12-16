@@ -1,3 +1,7 @@
+### 2.5.1
+
+- Added a temporary migration note to the README for users coming from `crappycodemaker.crappycode-theme`.
+
 ### 2.5.0
 
 - This extension has been migrated from `crappycodemaker.crappycode-theme` to `danilrez.flux-theme`. Version 2.3.5 was the final release under the old ID. Future versions will only be published under the new `danilrez.flux-theme` identifier.

@@ -39,6 +39,10 @@ If you don’t have them, feel free to use your favorite!
 "editor.fontFamily": "Fira Code, Consolas, Courier New, monospace",
 ```
 
+## 🔁 Migration note (temporary)
+
+If you previously installed this theme as **`crappycodemaker.crappycode-theme`**, uninstall/disable the old extension and install **`danilrez.flux-theme`** instead.
+
 ## 💬 Feedback
 
 I’d love to hear your thoughts! If you have suggestions or encounter issues, please open an **[![Issue Badge](https://img.shields.io/badge/Issue-2C94FC?logo=visualstudiocode&logoColor=fff&style=flat)](https://github.com/danilrez/flux-Theme/issues)**.

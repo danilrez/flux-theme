@@ -2,7 +2,7 @@
 	"name": "flux-theme",
 	"displayName": "Flux Theme",
 	"description": "Flux themes for VS Code, Cursor, and other VS Code-compatible editors",
-	"version": "2.5.0",
+	"version": "2.5.1",
 	"author": "Danil Reznichenko [@danilrez]",
 	"publisher": "danilrez",
 	"license": "MIT",
