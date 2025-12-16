@@ -1,95 +1,17 @@
-### 2.3.2
+### 2.5.0
 
-- Swapped JSON key accents from red to light blue for better readability.
+- This extension has been migrated from `crappycodemaker.crappycode-theme` to `danilrez.flux-theme`. Version 2.3.5 was the final release under the old ID. Future versions will only be published under the new `danilrez.flux-theme` identifier.
 
-### 2.3.1
+### 2.0.0 - 2.3.2
 
-- Fixed minor color inconsistencies across palettes.
+- **Major Re-architecture & Expansion:**
+    - The entire codebase was rewritten in TypeScript.
+    - Introduced a dynamic HSL-based palette engine for consistent and maintainable colors.
+    - Expanded the collection to four themes: `Flux Night`, `Flux Twilight`, `Flux Dawn`, and `Flux Daylight`.
+    - Numerous improvements to syntax highlighting, workbench colors, and accent palettes.
 
-### 2.3.0
+### 1.0.0 & Earlier
 
-- Added the new **Flux Dawn** light theme, a warm and energetic theme with a vibrant orange primary, and refined its daylight syntax colors.
-- Refreshed docs to list the full four-theme lineup and prepared a new preview for Dawn.
-
-### 2.2.5
-
-- Introduced palette-specific workbench overrides with the new `Flux Twilight` variant, renaming night overrides and deepening selection and drag backgrounds for better contrast in dark themes.
-- Tweaked dark palette neutrals to slightly darken selections and highlight backgrounds for consistent contrast across Night and Twilight.
-
-### 2.2.3
-
-- Added a night palette and applied it across the generated themes.
-- Renamed themes and refreshed docs; the README preview is now a higher-quality PNG.
-
-### 2.2.2
-
-- Rebuilt every dark accent ramp (red, green, yellow, blue, magenta, cyan, violet, orange) with the brighter high-saturation HSLA values we already use in the light palette, so diagnostics, Git badges, and other accents now share the same brand hues instead of muted stand-ins.
-
-### 2.2.1
-
-- Hotfix: adjusted Git decorations to remove subtle clashes between staged and unstaged indicators.
-
-### 2.2.0
-
-- Harmonized dark palette values and refreshed status bar contrast, especially for folderless sessions.
-- Migrated workbench colors to the flexible `[dark, light]` token format and tuned highlights across editor, activity bar, panels, and more.
-- Introduced primary/secondary brand aliases with override support and regression tests, plus reorganized notification customizations.
-- Simplified CLI theme generation by inlining brand overrides and removing redundant shade defaults.
-
-### 2.1.0
-
-- Added `Flux Daylight` light theme powered by the new HSL palette engine.
-- Introduced `Flux Night (no tokens)` and `Flux Daylight (no tokens)` variants that reuse VS Code's `Default Dark Modern` and `Default Light Modern` syntax tokens.
-- Added CLI support for `--no-tokens` along with new generation and test scripts for every theme flavor.
-- Swapped hard-coded HEX tables for dynamic HSL palettes to keep colors consistent and easier to maintain.
-- Refreshed documentation and assets (including compressed previews) for the expanded lineup.
-
-### 2.0.1 - 2.0.4
-
-- Fix icon outline
-- Fixing UI Color Bugs
-- New Preview img & icon
-
-### 2.0.0
-
-- **Complete Refactor:** Entire codebase rewritten in TypeScript with helper functions.
-- **Refined Color Palette:** Updated all colors and token assignments to modern standards.
-- **Improved Syntax Highlighting:** Enhanced readability across the editor.
-- **Legacy Themes Removed:** Deprecated outdated themes for a cleaner experience.
-
-### 1.0.27
-
-- New theme 'Bluetalic'
-
-- More dark bg color for:
-    - CCM Theme: DARK++,
-    - CCM Theme: Fresh,
-    - CCM Theme: GitHub,
-    - CCM Theme: Halloween,
-    - CCM Theme: Monokai,
-    - CCM Theme: Moon
-
-### 1.0.23
-
-- Changed some colors
-
-### 1.0.18
-
-- Updated all themes' colors
-
-### Version 0.8.1
-
-- Update colors for "CCM Theme: DARK (default)"
-- Add scopes for plsql
-
-## [pre-release]
-
-### Version 0.7.2
-
-Update some colors for:
-
-- CCM Theme: DARK (default),
-- CCM Theme: Halloween,
-- CCM Theme: Monokai,
-- CCM Theme: Moon,
-- CCM Theme: Light
+- **Initial Releases:**
+    - First versions of the theme and its variants.
+    - Focused on color adjustments and bug fixes.
