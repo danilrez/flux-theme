@@ -1,3 +1,18 @@
+### 2.6.1 - 2.6.3
+
+- Fixed Workbench color tokens across dark and light themes, including editor group borders, modern tabs, the Activity Bar, panel borders, scrollbar states, editor highlights, search highlights, and editor widgets.
+- Corrected token fallback, transparency, generated color keys, and alpha values to preserve compatibility with legacy VS Code color-customization formats.
+- Refactored theme generation, validation, VSIX packaging, and public-repository synchronization scripts, and added deterministic terminal theme previews.
+- Expanded automated coverage for the updated color mappings and CLI behavior.
+
+### 2.6.0
+
+- Adopted and integrated the updated VS Code Workbench color token set.
+- Added Modern UI color support for activity bars, editor tabs, panels, agents, chat, terminal, and related controls.
+- Added palette-aware dark/light mappings and theme-specific overrides across all four themes.
+- Improved color consistency and accessibility, replaced placeholder colors, and expanded token-resolution and customization tests.
+- Refactored CLI theme selection and theme generation to support the expanded token model.
+
 ### 2.5.1
 
 - Added a **temporary** migration note to the _README_ for users coming from `crappycodemaker.crappycode-theme`.
