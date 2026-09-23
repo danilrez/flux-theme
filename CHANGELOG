@@ -1,3 +1,10 @@
+### 2.7.0
+
+- Refined Workbench colors across all four themes, harmonizing neutral-based surfaces, borders, tabs, panels, sidebars, widgets, and editor controls.
+- Reworked hover, active, and selected states with transparent neutral overlays for the status bar, Command Center, toolbars, input options, modern tabs, and Activity Bar.
+- Updated Chat and agent UI colors, including translucent request bubbles, code borders, change indicators, shimmer/glow effects, and agent session surfaces.
+- Consolidated dark and light palette values into shared base Workbench tokens so Night/Twilight and Dawn/Daylight use the same mappings with their own neutral palettes.
+
 ### 2.6.1 - 2.6.3
 
 - Fixed Workbench color tokens across dark and light themes, including editor group borders, modern tabs, the Activity Bar, panel borders, scrollbar states, editor highlights, search highlights, and editor widgets.

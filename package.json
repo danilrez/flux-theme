@@ -2,7 +2,7 @@
 	"name": "flux-theme",
 	"displayName": "Flux Theme",
 	"description": "Flux themes for VS Code, Cursor, and other VS Code-compatible editors",
-	"version": "2.6.3",
+	"version": "2.7.0",
 	"author": "Danil Reznichenko [@danilrez]",
 	"publisher": "danilrez",
 	"license": "MIT",
@@ -49,6 +49,14 @@
 		"cursor",
 		"windsurf"
 	],
+	"files": [
+		"CHANGELOG",
+		"LICENSE",
+		"README.md",
+		"themes/**",
+		"images/icon.*"
+	],
+	"packageManager": "pnpm@11.16.0",
 	"contributes": {
 		"themes": [
 			{
@@ -73,14 +81,14 @@
 			}
 		]
 	},
-	"files": [
-		"CHANGELOG",
-		"LICENSE",
-		"README.md",
-		"themes/**",
-		"images/icon.*"
-	],
 	"scripts": {
-		"package": "vsce package -o ./flux-theme-${npm_package_version}.vsix"
+		"build": "node --import tsx scripts/build/build.mts",
+		"package": "vsce package -o ./flux-theme-${npm_package_version}.vsix",
+		"generate:themes": "node --import tsx scripts/generation/generate.mts",
+		"sync:public": "node --import tsx scripts/publishing/sync-public-repo.mts",
+		"sync:public:push": "node --import tsx scripts/publishing/sync-public-repo.mts --push",
+		"check": "node --import tsx scripts/validation/check.mts",
+		"test": "NODE_ENV=unittest vitest run",
+		"preview:theme": "node --import tsx src/index.ts --test"
 	}
 }
