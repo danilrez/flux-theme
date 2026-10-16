@@ -1,0 +1,94 @@
+{
+	"name": "flux-theme",
+	"displayName": "Flux Theme",
+	"description": "Flux themes for VS Code, Cursor, and other VS Code-compatible editors",
+	"version": "2.7.1",
+	"author": "Danil Reznichenko [@danilrez]",
+	"publisher": "danilrez",
+	"license": "MIT",
+	"icon": "images/icon.png",
+	"galleryBanner": {
+		"color": "#252B37",
+		"theme": "dark"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/danilrez/flux-theme"
+	},
+	"bugs": {
+		"url": "https://github.com/danilrez/flux-theme/issues"
+	},
+	"engines": {
+		"vscode": "^1.95.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"keywords": [
+		"theme",
+		"color-theme",
+		"editor-theme",
+		"syntax-theme",
+		"ui-theme",
+		"vscode",
+		"vscode-theme",
+		"vscode-color-theme",
+		"dark-theme",
+		"light-theme",
+		"high-contrast",
+		"minimal",
+		"pastel",
+		"neon",
+		"productivity",
+		"danilrez",
+		"crappycodemaker",
+		"flux",
+		"flux-theme",
+		"vscodium",
+		"openvsx",
+		"cursor",
+		"windsurf"
+	],
+	"files": [
+		"CHANGELOG",
+		"LICENSE",
+		"README.md",
+		"themes/**",
+		"images/icon.*"
+	],
+	"packageManager": "pnpm@11.16.0",
+	"contributes": {
+		"themes": [
+			{
+				"label": "Flux Night",
+				"uiTheme": "vs-dark",
+				"path": "themes/flux-night-theme.json"
+			},
+			{
+				"label": "Flux Twilight",
+				"uiTheme": "vs-dark",
+				"path": "themes/flux-twilight-theme.json"
+			},
+			{
+				"label": "Flux Dawn",
+				"uiTheme": "vs",
+				"path": "themes/flux-dawn-theme.json"
+			},
+			{
+				"label": "Flux Daylight",
+				"uiTheme": "vs",
+				"path": "themes/flux-daylight-theme.json"
+			}
+		]
+	},
+	"scripts": {
+		"build": "node --import tsx scripts/build/build.mts",
+		"package": "vsce package -o ./flux-theme-${npm_package_version}.vsix",
+		"generate:themes": "node --import tsx scripts/generation/generate.mts",
+		"sync:public": "node --import tsx scripts/publishing/sync-public-repo.mts",
+		"sync:public:push": "node --import tsx scripts/publishing/sync-public-repo.mts --push",
+		"check": "node --import tsx scripts/validation/check.mts",
+		"test": "NODE_ENV=unittest vitest run",
+		"preview:theme": "node --import tsx src/index.ts --test"
+	}
+}
